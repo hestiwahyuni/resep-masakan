@@ -1,0 +1,230 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #444;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Header Styles */
+.hesti-header {
+    background-color: #a3d8d3;
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hesti-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.hesti-title {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hesti-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hesti-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.hesti-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hesti-nav-link:hover {
+    background-color: #6ec5c1;
+    border-radius: 5px;
+}
+
+/* Home Section */
+.hesti-home {
+    background-color: #ffffff;
+    padding: 60px 0;
+    border-bottom: 5px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text horizontally */
+}
+
+.hesti-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; /* Center the description text */
+}
+
+/* Recipes Section */
+.hesti-recipes {
+    background-color: #f0f9f9;
+    padding: 60px 0;
+    text-align: center; /* Center-align the section */
+}
+
+.hesti-recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    gap: 20px; /* Spacing between image and text */
+}
+
+.hesti-recipe:hover {
+    transform: translateY(-10px);
+}
+
+.hesti-recipe-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hesti-recipe-details {
+    padding: 20px;
+    width: 70%;
+    text-align: left; /* Align recipe details to the left */
+}
+
+.hesti-recipe-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hesti-recipe-description {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hesti-recipe-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1abc9c;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hesti-recipe-link:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.hesti-about {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hesti-about .hesti-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contact Section */
+.hesti-contact {
+    background-color: #f0f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hesti-email {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.hesti-email:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.hesti-footer {
+    background-color: #6ec5c1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 5px solid #4fa69f;
+}
+
+.hesti-footer-text {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hesti-recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hesti-recipe-img {
+        width: 100%;
+    }
+
+    .hesti-recipe-details {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hesti-title {
+        font-size: 2rem;
+    }
+
+    .hesti-nav-link {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .hesti-footer-text {
+        font-size: 0.9rem;
+    }
+}
